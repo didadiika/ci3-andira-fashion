@@ -1,0 +1,17 @@
+{
+    "name": "dika/andira",
+    "type": "project",
+    "license": "GPL",
+    "autoload": {
+        "psr-4": {
+            "Dika\\Andira\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dika",
+            "email": "didadiika@gmail.com"
+        }
+    ],
+    "require": {}
+}
