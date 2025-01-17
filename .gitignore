@@ -6,6 +6,6 @@
 
 # Codeigniter3
 application/config/database.php
-#upload/
+upload/
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode,laravel
