@@ -29,6 +29,11 @@ class Akun extends CI_Controller{
                 $this->load->view("superadmin/beranda.php");
         	    $this->load->view("superadmin/template/footer.php");
 
+            } else if($level == "Owner"){
+				$this->load->view("owner/template/header.php");
+                $this->load->view("owner/template/menu.php");
+                $this->load->view("owner/beranda.php");
+        	    $this->load->view("owner/template/footer.php");
             } else if($level == "Admin"){
 				$this->load->view("admin/template/header.php");
                 $this->load->view("admin/template/menu.php");
@@ -64,6 +69,10 @@ class Akun extends CI_Controller{
 			$this->load->view("superadmin/template/menu.php");
 			$this->load->view("superadmin/akun/ganti-password.php",$data);
 
+        } else if($level == "Owner"){
+            $this->load->view("owner/template/header.php");
+			$this->load->view("owner/template/menu.php");
+			$this->load->view("owner/akun/ganti-password.php",$data);
         } else if($level == "Admin"){
             $this->load->view("admin/template/header.php");
 			$this->load->view("admin/template/menu.php");
@@ -132,6 +141,10 @@ class Akun extends CI_Controller{
 			$this->load->view("superadmin/template/menu.php");
 			$this->load->view("superadmin/akun/ganti-password-pass-old-error.php",$data);
 
+        } else if($level == "Owner"){
+            $this->load->view("owner/template/header.php");
+			$this->load->view("owner/template/menu.php");
+			$this->load->view("owner/akun/ganti-password-pass-old-error.php",$data);
         } else if($level == "Admin"){
             $this->load->view("admin/template/header.php");
 			$this->load->view("admin/template/menu.php");
@@ -161,11 +174,15 @@ class Akun extends CI_Controller{
 			$this->load->view("superadmin/template/menu.php");
 			$this->load->view("superadmin/akun/ganti-password-pass-not-same.php",$data);
 
+        } else if($level == "Owner"){
+            $this->load->view("owner/template/header.php");
+			$this->load->view("owner/template/menu.php");
+			$this->load->view("owner/akun/ganti-password-pass-not-same.php",$data);
         }  else if($level == "Admin"){
             $this->load->view("admin/template/header.php");
 			$this->load->view("admin/template/menu.php");
 			$this->load->view("admin/akun/ganti-password-pass-not-same.php",$data);
-        } else if($level == "Admin"){
+        } else if($level == "Gudang"){
             $this->load->view("gudang/template/header.php");
 			$this->load->view("gudang/template/menu.php");
 			$this->load->view("gudang/akun/ganti-password-pass-not-same.php",$data);
@@ -190,6 +207,10 @@ class Akun extends CI_Controller{
 			$this->load->view("superadmin/template/menu.php");
 			$this->load->view("superadmin/akun/ganti-password-success.php",$data);
 
+        } else if($level == "Owner"){
+            $this->load->view("owner/template/header.php");
+			$this->load->view("owner/template/menu.php");
+			$this->load->view("owner/akun/ganti-password-success.php",$data);
         } else if($level == "Admin"){
             $this->load->view("admin/template/header.php");
 			$this->load->view("admin/template/menu.php");
