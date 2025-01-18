@@ -214,7 +214,12 @@ class Akun extends CI_Controller{
             $this->load->view("superadmin/akun/tentang-software.php");
             $this->load->view("superadmin/template/footer.php");
 
-		}  else if($level == "Admin"){
+		}  else if($level == "Owner"){
+			$this->load->view("owner/template/header.php");
+			$this->load->view("owner/template/menu.php");
+            $this->load->view("owner/akun/tentang-software.php");
+            $this->load->view("owner/template/footer.php");
+		} else if($level == "Admin"){
 			$this->load->view("admin/template/header.php");
 			$this->load->view("admin/template/menu.php");
             $this->load->view("admin/akun/tentang-software.php");
