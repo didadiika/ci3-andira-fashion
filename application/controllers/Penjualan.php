@@ -559,8 +559,13 @@ class Penjualan extends CI_Controller{
 		$no = $start + 1;
         #$d = array();
 		foreach($penjualan as $r){
-		    $pembayaran = $this->db->query("select * from pembayaran where id_penjualan='$r->id_penjualan' ");
-            $pembayaran = $pembayaran->num_rows();
+		    $pembayaran = $this->db->query("select sum(nominal) as total_bayar from pembayaran where id_penjualan='$r->id_penjualan' ");
+            $total_bayar = 0;
+            if($pembayaran->num_rows() > 0){
+                foreach($pembayaran->result() as $t){
+                    $total_bayar = $t->total_bayar;
+                }
+            }
 
             $berat = $this->penjualan_model->cari_berat_total($r->id_penjualan);
 			$sub_array = array();
@@ -572,7 +577,7 @@ class Penjualan extends CI_Controller{
 			$sub_array[] = $berat;
             $sub_array[] = "<strong>".$r->status."</strong>";
             $sub_array[] = "<strong>".$r->ekspedisi." - ".$r->status_kirim."</strong>";
-            if($pembayaran == 0)
+            if($total_bayar <= 0)
             {
             if($r->status == "Belum Selesai")
             {
@@ -611,7 +616,7 @@ class Penjualan extends CI_Controller{
             </div>';
             }
             }
-            else if($pembayaran > 0)
+            else 
             {
                 if($r->status == "Belum Selesai")
                 {
