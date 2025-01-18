@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Andira Fashion | Owner</title>
+  <title>Andira Fashion | Admin</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!--CSS Global-->
@@ -23,6 +23,7 @@
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/bower_components/select2/dist/css/select2.min.css">
   	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/dist/css/AdminLTE.min.css">
 
+<script src="<?php echo base_url(); ?>assets/bower_components/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/dist/js/uang.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/dist/js/JsBarcode.all.min.js"></script>
 </head>

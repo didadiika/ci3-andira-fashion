@@ -37,7 +37,7 @@
           </ul>
         </li>
         
-        <li <?php if($this->uri->segment(1) == "pembelian"){echo "class='active treeview'";} else{echo "class='treeview'";}?>>
+        <!-- <li <?php if($this->uri->segment(1) == "pembelian"){echo "class='active treeview'";} else{echo "class='treeview'";}?>>
           <a href="#">
             <i class="fa fa-arrow-down"></i>
             <span>Kelola Pembelian</span>
@@ -50,7 +50,7 @@
             <li <?php if($this->uri->segment(1) == "pembelian" && $this->uri->segment(2) == "pembelian"){echo"class='active'";} ?>><a href="<?php echo base_url('pembelian/pembelian');?>"><i class="fa <?php if($this->uri->segment(1) == "pembelian"  && $this->uri->segment(2) == "pembelian"){echo"fa-circle";}else{echo"fa-circle-o";} ?>"></i> Transaksi Pembelian</a></li>
             <li <?php if($this->uri->segment(1) == "pembelian" && $this->uri->segment(2) == "laporan-pembelian"){echo"class='active'";} ?>><a href="<?php echo base_url('pembelian/laporan-pembelian');?>"><i class="fa <?php if($this->uri->segment(1) == "pembelian"  && $this->uri->segment(2) == "laporan-pembelian"){echo"fa-circle";}else{echo"fa-circle-o";} ?>"></i> Laporan Pembelian</a></li>
           </ul>
-        </li>
+        </li> -->
 
         <li <?php if($this->uri->segment(1) == "barang"){echo "class='active treeview'";} else{echo "class='treeview'";}?>>
           <a href="#">
@@ -62,8 +62,8 @@
           </a>
           <ul class="treeview-menu">
             <li <?php if($this->uri->segment(1) == "barang" && $this->uri->segment(2) == "barang"){echo"class='active'";} ?>><a href="<?php echo base_url('barang/barang');?>"><i class="fa <?php if($this->uri->segment(1) == "barang"  && $this->uri->segment(2) == "barang"){echo"fa-circle";}else{echo"fa-circle-o";} ?>"></i> Data Barang</a></li>
-            <li <?php if($this->uri->segment(1) == "barang" && $this->uri->segment(2) == "barang-masuk"){echo"class='active'";} ?>><a href="<?php echo base_url('barang/barang-masuk');?>"><i class="fa <?php if($this->uri->segment(1) == "barang"  && $this->uri->segment(2) == "barang-masuk"){echo"fa-circle";}else{echo"fa-circle-o";} ?>"></i> Daftar Barang Masuk</a></li>
-            <li <?php if($this->uri->segment(1) == "barang" && $this->uri->segment(2) == "barang-keluar"){echo"class='active'";} ?>><a href="<?php echo base_url('barang/barang-keluar');?>"><i class="fa <?php if($this->uri->segment(1) == "barang"  && $this->uri->segment(2) == "barang-keluar"){echo"fa-circle";}else{echo"fa-circle-o";} ?>"></i> Daftar Barang Keluar</a></li>
+            <!-- <li <?php if($this->uri->segment(1) == "barang" && $this->uri->segment(2) == "barang-masuk"){echo"class='active'";} ?>><a href="<?php echo base_url('barang/barang-masuk');?>"><i class="fa <?php if($this->uri->segment(1) == "barang"  && $this->uri->segment(2) == "barang-masuk"){echo"fa-circle";}else{echo"fa-circle-o";} ?>"></i> Daftar Barang Masuk</a></li>
+            <li <?php if($this->uri->segment(1) == "barang" && $this->uri->segment(2) == "barang-keluar"){echo"class='active'";} ?>><a href="<?php echo base_url('barang/barang-keluar');?>"><i class="fa <?php if($this->uri->segment(1) == "barang"  && $this->uri->segment(2) == "barang-keluar"){echo"fa-circle";}else{echo"fa-circle-o";} ?>"></i> Daftar Barang Keluar</a></li> -->
             <li <?php if($this->uri->segment(1) == "barang" && $this->uri->segment(2) == "stok-barang"){echo"class='active'";} ?>><a href="<?php echo base_url('barang/stok-barang');?>"><i class="fa <?php if($this->uri->segment(1) == "barang"  && $this->uri->segment(2) == "stok-barang"){echo"fa-circle";}else{echo"fa-circle-o";} ?>"></i> Stok Barang</a></li>
             <li <?php if($this->uri->segment(1) == "barang" && $this->uri->segment(2) == "laporan-stok"){echo"class='active'";} ?>><a href="<?php echo base_url('barang/laporan-stok');?>"><i class="fa <?php if($this->uri->segment(1) == "barang"  && $this->uri->segment(2) == "laporan-stok"){echo"fa-circle";}else{echo"fa-circle-o";} ?>"></i> Laporan Stok</a></li>
           </ul>
@@ -78,7 +78,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li <?php if($this->uri->segment(1) == "penjualan" && $this->uri->segment(2) == "pelanggan"){echo"class='active'";} ?>><a href="<?php echo base_url('penjualan/pelanggan');?>"><i class="fa <?php if($this->uri->segment(1) == "penjualan"  && $this->uri->segment(2) == "pelanggan"){echo"fa-circle";}else{echo"fa-circle-o";} ?>"></i> Pelanggan</a></li>
+            <!-- <li <?php if($this->uri->segment(1) == "penjualan" && $this->uri->segment(2) == "pelanggan"){echo"class='active'";} ?>><a href="<?php echo base_url('penjualan/pelanggan');?>"><i class="fa <?php if($this->uri->segment(1) == "penjualan"  && $this->uri->segment(2) == "pelanggan"){echo"fa-circle";}else{echo"fa-circle-o";} ?>"></i> Pelanggan</a></li> -->
             <li <?php if($this->uri->segment(1) == "penjualan" && $this->uri->segment(2) == "penjualan"){echo"class='active'";} ?>><a href="<?php echo base_url('penjualan/penjualan');?>"><i class="fa <?php if($this->uri->segment(1) == "penjualan"  && $this->uri->segment(2) == "penjualan"){echo"fa-circle";}else{echo"fa-circle-o";} ?>"></i> Buat Penjualan Baru</a></li>
             <li <?php if($this->uri->segment(1) == "penjualan" && $this->uri->segment(2) == "daftar-penjualan"){echo"class='active'";} ?>><a href="<?php echo base_url('penjualan/daftar-penjualan');?>"><i class="fa <?php if($this->uri->segment(1) == "penjualan"  && $this->uri->segment(2) == "daftar-penjualan"){echo"fa-circle";}else{echo"fa-circle-o";} ?>"></i> Daftar Penjualan</a></li>
             <li <?php if($this->uri->segment(1) == "penjualan" && $this->uri->segment(2) == "laporan-penjualan"){echo"class='active'";} ?>><a href="<?php echo base_url('penjualan/laporan-penjualan');?>"><i class="fa <?php if($this->uri->segment(1) == "penjualan"  && $this->uri->segment(2) == "laporan-penjualan"){echo"fa-circle";}else{echo"fa-circle-o";} ?>"></i> Laporan Penjualan</a></li>

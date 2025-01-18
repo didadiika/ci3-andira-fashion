@@ -34,7 +34,17 @@ class Home extends CI_Controller{
                 $this->load->view("admin/template/menu.php");
 				$this->load->view("admin/beranda.php");
         		$this->load->view("admin/template/footer.php");
-            }
+            } else if($level == "Owner"){
+				$this->load->view("owner/template/header.php");
+                $this->load->view("owner/template/menu.php");
+				$this->load->view("owner/beranda.php");
+        		$this->load->view("owner/template/footer.php");
+			} else if($level == "Gudang"){
+				$this->load->view("gudang/template/header.php");
+                $this->load->view("gudang/template/menu.php");
+				$this->load->view("gudang/beranda.php");
+        		$this->load->view("gudang/template/footer.php");
+			} 
         	
         	/*
 			*	Menampilkan view master template dan halaman beranda

@@ -21,16 +21,6 @@ $(document).ready(function(){
             "targets": 7,
             "orderable":false,
             "searchable":false
-        },
-        {
-            "targets": 8,
-            "orderable":false,
-            "searchable":false
-        },
-        {
-            "targets": 9,
-            "orderable":false,
-            "searchable":false
         }
         ],
 
@@ -130,10 +120,6 @@ $('#tabel-barang').on('click','.item_hapus',function(){
 
     <section class="content">
 
-<a class="btn btn-app" href="<?php echo base_url('barang/barang/input');?>">
-<i class="fa fa-plus"></i> Tambah Data Barang
-</a>
-
 
 
 <div class="box">
@@ -148,7 +134,7 @@ $('#tabel-barang').on('click','.item_hapus',function(){
               <table id="tabel-barang" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th><input type="checkbox" name="select_all" value="1" id="example-select-all"></th>
+                  <th></th>
                   <th>No</th>
                   <th>Kode Barang</th>
                   <th>Nama Barang</th>
@@ -157,8 +143,6 @@ $('#tabel-barang').on('click','.item_hapus',function(){
                   <th>Keterangan</th>
                   <th>Stok</th>
                   <th>Foto</th>
-                  <th>Masuk / Keluar</th>
-                  <th>Aksi</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -174,40 +158,12 @@ $('#tabel-barang').on('click','.item_hapus',function(){
                   <th>Keterangan</th>
                   <th>Stok</th>
                   <th>Foto</th>
-                  <th>Masuk / Keluar</th>
-                  <th>Aksi</th>
                 </tr>
                 </tfoot>
               </table>
             </div>
-            <!--MODAL HAPUS-->
-        <div class="modal fade" id="ModalHapus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">X</span></button>
-                        <h4 class="modal-title" id="myModalLabel">Hapus Barang</h4>
-                    </div>
-                    <form class="form-horizontal">
-                    <div class="modal-body">
-                                           
-                            <input type="hidden" name="id_hapus" id="id_hapus" value="">
-                            <div class="alert alert-warning"><p>Apakah Anda yakin mau menghapus <span id="nama_barang"></span> ini?</p></div>
-                                         
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
-                        <button class="btn_hapus btn btn-danger" id="btn_hapus">Hapus</button>
-                    </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!--END MODAL HAPUS-->
+           
 
-            <form id="frm-example">
-            <button type="submit" id="frm-examples" class="btn btn-danger">Hapus Yang Dipilih</button>
-            </form>
             </div>
 
             <!-- /.box-body -->

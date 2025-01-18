@@ -33,6 +33,9 @@ class Pembelian extends CI_Controller{
             } else if($level == "Admin"){
 				$this->load->view("admin/template/header.php");
                 $this->load->view("admin/template/menu.php");
+            } else if($level == "Gudang"){
+				$this->load->view("gudang/template/header.php");
+                $this->load->view("gudang/template/menu.php");
             }
         	$this->load->view("admin/beranda.php");
         	$this->load->view("admin/template/footer.php");
@@ -63,6 +66,9 @@ class Pembelian extends CI_Controller{
         } else if($level == "Admin"){
             $this->load->view("admin/template/header.php");
             $this->load->view("admin/template/menu.php");
+        } else if($level == "Gudang"){
+            $this->load->view("gudang/template/header.php");
+            $this->load->view("gudang/template/menu.php");
         }
         $this->load->view("admin/pembelian/toko.php",$data);
         $this->load->view("admin/template/footer.php");
@@ -88,6 +94,9 @@ class Pembelian extends CI_Controller{
         } else if($level == "Admin"){
             $this->load->view("admin/template/header.php");
             $this->load->view("admin/template/menu.php");
+        } else if($level == "Gudang"){
+            $this->load->view("gudang/template/header.php");
+            $this->load->view("gudang/template/menu.php");
         }
         $this->load->view("admin/pembelian/toko-input.php",$data);
         $this->load->view("admin/template/footer.php");
@@ -129,6 +138,9 @@ class Pembelian extends CI_Controller{
         } else if($level == "Admin"){
             $this->load->view("admin/template/header.php");
             $this->load->view("admin/template/menu.php");
+        } else if($level == "Gudang"){
+            $this->load->view("gudang/template/header.php");
+            $this->load->view("gudang/template/menu.php");
         }
         $this->load->view("admin/pembelian/toko-edit.php",$data);
         $this->load->view("admin/template/footer.php");
@@ -188,6 +200,9 @@ class Pembelian extends CI_Controller{
         } else if($level == "Admin"){
             $this->load->view("admin/template/header.php");
             $this->load->view("admin/template/menu.php");
+        } else if($level == "Gudang"){
+            $this->load->view("gudang/template/header.php");
+            $this->load->view("gudang/template/menu.php");
         }
         $this->load->view("admin/pembelian/pembelian.php",$data);
         $this->load->view("admin/template/footer.php");
@@ -212,6 +227,9 @@ class Pembelian extends CI_Controller{
         } else if($level == "Admin"){
             $this->load->view("admin/template/header.php");
             $this->load->view("admin/template/menu.php");
+        } else if($level == "Gudang"){
+            $this->load->view("gudang/template/header.php");
+            $this->load->view("gudang/template/menu.php");
         }
         $this->load->view("admin/pembelian/pembelian-input.php",$data);
         $this->load->view("admin/template/footer.php");
@@ -279,6 +297,9 @@ class Pembelian extends CI_Controller{
         } else if($level == "Admin"){
             $this->load->view("admin/template/header.php");
             $this->load->view("admin/template/menu.php");
+        } else if($level == "Gudang"){
+            $this->load->view("gudang/template/header.php");
+            $this->load->view("gudang/template/menu.php");
         }
         $this->load->view("admin/pembelian/pembelian-edit.php",$data);
         $this->load->view("admin/template/footer.php");
@@ -345,6 +366,9 @@ class Pembelian extends CI_Controller{
         } else if($level == "Admin"){
             $this->load->view("admin/template/header.php");
             $this->load->view("admin/template/menu.php");
+        } else if($level == "Gudang"){
+            $this->load->view("gudang/template/header.php");
+            $this->load->view("gudang/template/menu.php");
         }
         $this->load->view("admin/pembelian/laporan-pembelian.php");
         $this->load->view("admin/template/footer.php");

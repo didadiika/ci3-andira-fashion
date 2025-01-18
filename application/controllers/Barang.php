@@ -35,6 +35,9 @@ class Barang extends CI_Controller{
             } else if($level == "Admin"){
 				$this->load->view("admin/template/header.php");
                 $this->load->view("admin/template/menu.php");
+            } else if($level == "Gudang"){
+				$this->load->view("gudang/template/header.php");
+                $this->load->view("gudang/template/menu.php");
             }
 
             $this->load->view("admin/beranda.php");
@@ -61,11 +64,16 @@ class Barang extends CI_Controller{
         } else if($level == "Owner"){
             $this->load->view("owner/template/header.php");
             $this->load->view("owner/template/menu.php");
+            $this->load->view("owner/barang/barang.php");
         } else if($level == "Admin"){
             $this->load->view("admin/template/header.php");
             $this->load->view("admin/template/menu.php");
+            $this->load->view("admin/barang/barang.php");
+        } else if($level == "Gudang"){
+            $this->load->view("gudang/template/header.php");
+            $this->load->view("gudang/template/menu.php");
+            $this->load->view("gudang/barang/barang.php");
         }
-        $this->load->view("admin/barang/barang.php");
         $this->load->view("admin/template/footer.php");
         #Menampilkan halaman suplier dan mem passing variabel data#
     }
@@ -165,6 +173,9 @@ class Barang extends CI_Controller{
         } else if($level == "Admin"){
             $this->load->view("admin/template/header.php");
             $this->load->view("admin/template/menu.php");
+        } else if($level == "Gudang"){
+            $this->load->view("gudang/template/header.php");
+            $this->load->view("gudang/template/menu.php");
         }
         $this->load->view("admin/barang/barang-input.php",$data);
         $this->load->view("admin/template/footer.php");
@@ -246,6 +257,9 @@ class Barang extends CI_Controller{
             } else if($level == "Admin"){
                 $this->load->view("admin/template/header.php");
                 $this->load->view("admin/template/menu.php");
+            } else if($level == "Gudang"){
+				$this->load->view("gudang/template/header.php");
+                $this->load->view("gudang/template/menu.php");
             }
             $this->load->view("admin/barang/barang-lihat.php",$data);
             $this->load->view("admin/template/footer.php");
@@ -274,6 +288,9 @@ class Barang extends CI_Controller{
         } else if($level == "Admin"){
             $this->load->view("admin/template/header.php");
             $this->load->view("admin/template/menu.php");
+        } else if($level == "Gudang"){
+            $this->load->view("gudang/template/header.php");
+            $this->load->view("gudang/template/menu.php");
         }
         $this->load->view("admin/barang/barang-edit.php",$data);
         $this->load->view("admin/template/footer.php");
@@ -347,6 +364,9 @@ class Barang extends CI_Controller{
         } else if($level == "Admin"){
             $this->load->view("admin/template/header.php");
             $this->load->view("admin/template/menu.php");
+        } else if($level == "Gudang"){
+            $this->load->view("gudang/template/header.php");
+            $this->load->view("gudang/template/menu.php");
         }
         $this->load->view("admin/barang/barang-masuk.php");
         $this->load->view("admin/template/footer.php");
@@ -416,6 +436,9 @@ class Barang extends CI_Controller{
         } else if($level == "Admin"){
             $this->load->view("admin/template/header.php");
             $this->load->view("admin/template/menu.php");
+        } else if($level == "Gudang"){
+            $this->load->view("gudang/template/header.php");
+            $this->load->view("gudang/template/menu.php");
         }
         $this->load->view("admin/barang/barang-masuk-input.php",$data);
         $this->load->view("admin/template/footer.php");
@@ -512,6 +535,9 @@ class Barang extends CI_Controller{
         } else if($level == "Admin"){
             $this->load->view("admin/template/header.php");
             $this->load->view("admin/template/menu.php");
+        } else if($level == "Gudang"){
+            $this->load->view("gudang/template/header.php");
+            $this->load->view("gudang/template/menu.php");
         }
         $this->load->view("admin/barang/barang-keluar.php");
         $this->load->view("admin/template/footer.php");
@@ -581,6 +607,9 @@ class Barang extends CI_Controller{
         } else if($level == "Admin"){
             $this->load->view("admin/template/header.php");
             $this->load->view("admin/template/menu.php");
+        } else if($level == "Gudang"){
+            $this->load->view("gudang/template/header.php");
+            $this->load->view("gudang/template/menu.php");
         }
         $this->load->view("admin/barang/barang-keluar-input.php",$data);
         $this->load->view("admin/template/footer.php");
@@ -677,6 +706,9 @@ class Barang extends CI_Controller{
         } else if($level == "Admin"){
             $this->load->view("admin/template/header.php");
             $this->load->view("admin/template/menu.php");
+        } else if($level == "Gudang"){
+            $this->load->view("gudang/template/header.php");
+            $this->load->view("gudang/template/menu.php");
         }
         $this->load->view("admin/barang/stok-barang.php");
         $this->load->view("admin/template/footer.php");
@@ -734,6 +766,9 @@ class Barang extends CI_Controller{
         } else if($level == "Admin"){
             $this->load->view("admin/template/header.php");
             $this->load->view("admin/template/menu.php");
+        } else if($level == "Gudang"){
+            $this->load->view("gudang/template/header.php");
+            $this->load->view("gudang/template/menu.php");
         }
         $this->load->view("admin/barang/laporan-stok.php");
         $this->load->view("admin/template/footer.php");
